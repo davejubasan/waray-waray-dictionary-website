@@ -11,10 +11,10 @@ const MainContainer = ({ children, className }) => {
 const App = () => {
   return (
     <BrowserRouter>
-      <MainContainer className={`relative w-screen h-screen bg-[url('../public/main-bg.png')] bg-no-repeat bg-cover`}>
+      <MainContainer className={`relative w-screen h-screen bg-[url('../public/assets/images/main-bg.png')] bg-no-repeat bg-cover`}>
         <Routes>
           <Route exact path="/" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </MainContainer>
     </BrowserRouter>
