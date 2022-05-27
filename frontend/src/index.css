@@ -12,7 +12,7 @@
 		@apply px-3 py-2 font-bold transition-all rounded-md select-none bg-aesthetic-500 font-poppins text-aesthetic-100 hover:cursor-pointer hover:bg-white focus:outline-none active:scale-95 active:bg-aesthetic-hover-500;
 	}
 	.main-input-field {
-		@apply w-full bg-transparent border-0 border-b-4 outline-none border-b-slate-100 text-slate-100 ring-0 placeholder:text-slate-100 focus:border-aesthetic-500 focus:outline-none focus:ring-0;
+		@apply w-full text-base bg-transparent border-0 border-b-2 outline-none border-b-slate-100 font-poppins text-slate-100 ring-0 placeholder:text-gray-50 focus:border-aesthetic-500 focus:outline-none focus:ring-0;
 	}
 }
 /* Custom CSS */

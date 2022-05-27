@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function Login() {
 	return (
 		<section className="relative flex flex-col items-center h-screen px-10 py-20">
-			<img
+			<img className="w-full max-w-md"
 				src='/assets/images/waray-waray-dictionary-logo-white.png'
 				alt="logo-white" />
-			<form action="#" method="POST" className="flex flex-col w-full gap-8 mt-16">
+			<form action="#" method="POST" className="flex flex-col gap-8 mt-16 laptop:w-1/4 mobile:w-full">
 				<input className="main-input-field" type="text" name="username" id="usernameID" placeholder="Username" />
 				<input className="main-input-field" type="password" name="password" id="passwordID" placeholder="Password" />
 				<button type="submit" className="main-btn">LOGIN</button>
