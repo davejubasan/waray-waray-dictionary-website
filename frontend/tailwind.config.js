@@ -22,6 +22,7 @@ module.exports = {
         'aesthetic-300': '#957755',
         'aesthetic-400': '#D2B48C',
         'aesthetic-500': '#FFF8DC',
+        'aesthetic-hover-500': '#f1ecd2',
       }
     },
   },
