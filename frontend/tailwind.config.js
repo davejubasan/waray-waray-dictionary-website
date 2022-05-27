@@ -1,0 +1,31 @@
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    screens: {
+      'mobile': { 'max': '360px' },
+      'laptop': { 'max': '1280px' },
+      'desktop': { 'max': '1360px' },
+    },
+
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
+        merriweather: [" Merriweather", "serif"],
+      },
+      colors: {
+        'aesthetic-100': '#8D4513',
+        'aesthetic-200': '#B07946',
+        'aesthetic-300': '#957755',
+        'aesthetic-400': '#D2B48C',
+        'aesthetic-500': '#FFF8DC',
+      }
+    },
+  },
+  plugins: [
+    require('flowbite/plugin')
+  ]
+}

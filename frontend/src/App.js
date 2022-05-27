@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
-function App() {
+const MainContainer = ({ children, className }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={`${className}`}> {children} </main>
+  );
+};
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <MainContainer className={`relative w-screen h-screen bg-[url('../public/main-bg.png')] bg-no-repeat bg-cover`}>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
+        </Routes>
+      </MainContainer>
+    </BrowserRouter>
   );
 }
 
